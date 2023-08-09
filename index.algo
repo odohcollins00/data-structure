@@ -1,0 +1,15 @@
+procedure dot_product(v1, v2, ps)
+    ps = 0
+    for i = 1 to length(v1) do
+        ps = ps + v1[i] * v2[i]
+
+algorithm check_orthogonal_using_procedure
+    n = number of vector pairs
+    for i = 1 to n do
+        read v1, v2 from input
+        ps = 0
+        dot_product(v1, v2, ps)
+        if ps = 0 then
+            print "Vectors are orthogonal"
+        else
+            print "Vectors are not orthogonal"
